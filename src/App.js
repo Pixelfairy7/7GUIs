@@ -4,6 +4,7 @@ import './App.css'
 //COMPONENTS
 import Header from './components/header';
 import Counter from './components/counter';
+import TemperatureConverter from './components/temp-converter'
 
 
 
@@ -12,6 +13,7 @@ function App() {
     <div className="App">
      <Header />
       <Counter />
+      <TemperatureConverter />
     </div>
   );
 }

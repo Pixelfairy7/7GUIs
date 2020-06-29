@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 
-export class counter extends Component {
+export class Counter extends Component {
     constructor(props){
         super(props);
-        this.incrementCounter = this.incrementCounter.bind('this');
+        this.incrementCounter = this.incrementCounter.bind(this);
     }
     state={
         count: 0,
@@ -15,7 +15,7 @@ export class counter extends Component {
     }
     render() {
         return (
-            <div className="counter-container">
+            <div className="project-container">
             <h2>Counter</h2>
                 <div className="counter">
                     <span className="counter-display">{this.state.count}</span>
@@ -26,4 +26,4 @@ export class counter extends Component {
     }
 }
 
-export default counter
+export default Counter
